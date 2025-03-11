@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bài Thi Trắc Nghiệm</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="container exam-container">
+    <div class="exam-header">
+      <h1 class="title">Bài Thi Trắc Nghiệm</h1>
+      
+      <div class="student-info">
+        <div class="info-row">
+          <p class="info-label">Họ và tên: <span id="displayFullName" class="info-value"></span></p>
+          <p class="info-label">Ngày sinh: <span id="displayBirthDate" class="info-value"></span></p>
+        </div>
+        <div class="info-row">
+          <p class="info-label">Mã sinh viên: <span id="displayStudentId" class="info-value"></span></p>
+          <p class="info-label">Lớp: <span id="displayClassName" class="info-value"></span></p>
+        </div>
+      </div>
+      
+      <div id="resultContainer" class="result-container hidden">
+        <h2 class="result-title">Kết Quả</h2>
+        <p class="result-score">Điểm số: <span id="score" class="score">0</span>/<span id="totalQuestions">30</span> (không tính 10 câu tự luận)</p>
+      </div>
+    </div>
+
+    <div class="exam-sections">
+      <!-- Phần 1: Câu hỏi Đúng/Sai -->
+      <section class="question-section">
+        <h2 class="section-title">Phần 1: Câu hỏi Đúng/Sai (10 câu)</h2>
+        <div id="trueFalseQuestions" class="questions-container"></div>
+      </section>
+      
+      <!-- Phần 2: Câu hỏi Trắc Nghiệm -->
+      <section class="question-section">
+        <h2 class="section-title">Phần 2: Câu hỏi Trắc Nghiệm (10 câu)</h2>
+        <div id="multipleChoiceQuestions" class="questions-container"></div>
+      </section>
+      
+      <!-- Phần 3: Câu hỏi Nhiều Đáp Án -->
+      <section class="question-section">
+        <h2 class="section-title">Phần 3: Câu hỏi Nhiều Đáp Án (10 câu)</h2>
+        <div id="multiSelectQuestions" class="questions-container"></div>
+      </section>
+      
+      <!-- Phần 4: Câu hỏi Tự Luận -->
+      <section class="question-section">
+        <h2 class="section-title">Phần 4: Câu hỏi Tự Luận (10 câu)</h2>
+        <div id="essayQuestions" class="questions-container"></div>
+      </section>
+    </div>
+    
+    <div class="submit-container">
+      <button id="submitBtn" class="submit-btn">Nộp Bài</button>
+    </div>
+  </main>
+
+  <script src="js/questions.js"></script>
+  <script src="js/exam.js"></script>
+</body>
+</html> 
