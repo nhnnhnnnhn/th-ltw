@@ -12,14 +12,12 @@ body {
   background-color: #f5f5f5;
 }
 
-/* Container */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem 1rem;
 }
 
-/* Form Styles */
 .form-container {
   background-color: #fff;
   border-radius: 8px;
@@ -32,7 +30,7 @@ body {
 .title {
   text-align: center;
   margin-bottom: 1.5rem;
-  color: #2563eb;
+  color: #971616;
   font-size: 1.8rem;
 }
 
@@ -61,12 +59,12 @@ body {
 
 .form-group input:focus {
   outline: none;
-  border-color: #2563eb;
+  border-color: #971616;
   box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
 }
 
 .submit-btn {
-  background-color: #2563eb;
+  background-color: #971616;
   color: white;
   border: none;
   border-radius: 4px;
@@ -79,10 +77,9 @@ body {
 }
 
 .submit-btn:hover {
-  background-color: #1d4ed8;
+  background-color: #971616;
 }
 
-/* Exam Styles */
 .exam-container {
   background-color: #fff;
   border-radius: 8px;
@@ -168,7 +165,6 @@ body {
   gap: 1.5rem;
 }
 
-/* Question Item Styles */
 .question-item {
   border: 1px solid #e5e7eb;
   border-radius: 6px;
@@ -185,7 +181,6 @@ body {
   margin-right: 0.5rem;
 }
 
-/* True/False Question */
 .true-false-options {
   display: flex;
   flex-direction: column;
@@ -233,14 +228,12 @@ body {
   margin-right: 0.5rem;
 }
 
-/* Multiple Choice Question */
 .multiple-choice-options {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
 }
 
-/* Multiple Select Question */
 .multiple-select-options {
   display: flex;
   flex-direction: column;
@@ -253,7 +246,6 @@ body {
   margin-bottom: 0.75rem;
 }
 
-/* Essay Question */
 .essay-textarea {
   width: 100%;
   min-height: 120px;
@@ -267,7 +259,7 @@ body {
 
 .essay-textarea:focus {
   outline: none;
-  border-color: #2563eb;
+  border-color: #971616;
   box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
 }
 
@@ -285,7 +277,6 @@ body {
   margin-bottom: 0.5rem;
 }
 
-/* Result Feedback */
 .answer-feedback {
   margin-top: 1rem;
   padding: 0.75rem;
@@ -302,7 +293,6 @@ body {
   color: #b91c1c;
 }
 
-/* Submit Container */
 .submit-container {
   margin-top: 2.5rem;
   margin-bottom: 3rem;

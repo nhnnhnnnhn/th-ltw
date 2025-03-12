@@ -1,9 +1,7 @@
-// Hàm tạo ID ngẫu nhiên
 const generateId = () => {
   return Math.random().toString(36).substring(2, 15);
 };
 
-// Các câu hỏi đúng/sai demo
 const trueFalseQuestions = [
   {
     id: generateId(),
@@ -67,7 +65,6 @@ const trueFalseQuestions = [
   },
 ];
 
-// Các câu hỏi trắc nghiệm demo
 const multipleChoiceQuestions = [
   {
     id: generateId(),
@@ -191,7 +188,6 @@ const multipleChoiceQuestions = [
   },
 ];
 
-// Các câu hỏi nhiều đáp án demo
 const multiSelectQuestions = [
   {
     id: generateId(),
@@ -315,7 +311,6 @@ const multiSelectQuestions = [
   },
 ];
 
-// Các câu hỏi tự luận demo
 const essayQuestions = [
   {
     id: generateId(),
@@ -379,7 +374,6 @@ const essayQuestions = [
   },
 ];
 
-// Trộn ngẫu nhiên mỗi danh sách câu hỏi
 const shuffleArray = (array) => {
   const newArray = [...array];
   for (let i = newArray.length - 1; i > 0; i--) {
@@ -389,7 +383,6 @@ const shuffleArray = (array) => {
   return newArray;
 };
 
-// Tạo danh sách câu hỏi
 const generateQuestions = () => {
   return {
     trueFalse: shuffleArray(trueFalseQuestions),

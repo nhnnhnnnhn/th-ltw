@@ -9,15 +9,15 @@ document.addEventListener('DOMContentLoaded', () => {
     // Lấy giá trị từ form
     const fullName = document.getElementById('fullName').value;
     const birthDate = document.getElementById('birthDate').value;
-    const studentId = document.getElementById('studentId').value;
-    const className = document.getElementById('className').value;
+    const CCCD = document.getElementById('CCCD').value;
+    const address = document.getElementById('address').value;
     
     // Lưu thông tin vào localStorage
     const studentInfo = {
       fullName,
       birthDate,
-      studentId,
-      className
+      CCCD,
+      address
     };
     
     localStorage.setItem('studentInfo', JSON.stringify(studentInfo));

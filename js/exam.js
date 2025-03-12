@@ -12,8 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
   // Hiển thị thông tin sinh viên
   document.getElementById('displayFullName').textContent = studentInfo.fullName;
   document.getElementById('displayBirthDate').textContent = studentInfo.birthDate;
-  document.getElementById('displayStudentId').textContent = studentInfo.studentId;
-  document.getElementById('displayClassName').textContent = studentInfo.className;
+  document.getElementById('displayCCCD').textContent = studentInfo.CCCD;
+  document.getElementById('displayAddress').textContent = studentInfo.address;
 
   // Tạo câu hỏi từ file questions.js
   const questions = generateQuestions();
